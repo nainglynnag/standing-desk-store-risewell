@@ -1,0 +1,126 @@
+:root{
+    --bld: rgb(7, 24, 196);
+    --bll: rgb(42, 153, 222);
+    --gr: rgb(46, 204, 64);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/* login style  */
+.login{
+    height: 100vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 500px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+
+.login-container form{
+    padding: 20px 30px;
+}
+
+.login-container h2{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 30px;
+}
+
+.form-group label{
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group .form-control{
+    width: 100%;   
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-group .form-control::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+}
+
+.remember input, label{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+form .btn{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+form .btn:hover{
+    background-color: var(--bll);
+}
+
+form .btn:active{
+    background-color: var(--bld);
+}
+
+.register{
+    display: flex;
+    margin: 8px 0;
+}
+
+.register p{
+    margin-right: 5px;
+}
+
+.register a{
+    color: var(--bll);
+}
+
+.register a:active{
+    color: var(--bld);
+}
+
+@media(max-width: 500px){
+    .login-container{
+        width: 400px;
+    }
+}

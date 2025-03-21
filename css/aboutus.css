@@ -1,0 +1,284 @@
+:root{
+    --bld: rgb(7, 24, 196);
+    --bll: rgb(42, 153, 222);
+    --gr: rgb(46, 204, 64);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/* start story  */
+.storyinfo{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyinfo .container{
+    width: 80%;
+    top: 0;
+    left: 0;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img{
+    width: 500px;
+    top: 100%;
+}
+
+.storyinfo .container .content{
+    width: 50%;
+    color: #000;
+    padding: 20px;
+}
+/* end story  */
+
+/* start ourstory */
+.ourstory{
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.story-container{
+    width: 80%;
+}
+
+.story-container h1{
+    margin-top: 30px;
+    text-align: center;
+}
+/* end ourstory */
+
+/* start our vision */
+.vision{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-container{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-content{
+    padding-right: 20px;
+}
+
+.vision-img img{
+    width: 500px;
+    height: 400px;
+}
+/* end our vision  */
+
+/* start our mission */
+.mission{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-img img{
+    width: 500px;
+    height: 400px;
+}
+
+.mission-content{
+    padding-left: 20px;
+}
+
+.mission-content .fas.fa-angle-double-right{
+    padding-right: 10px;
+}
+/* end our mission */
+
+/* for tablet screen  */
+@media(max-width: 950px){
+    .storyinfo{
+        margin-top: 8%;
+    }
+
+    .about-img img{
+        width: 400px;
+        height: 330px;
+    }
+
+    .vision-img img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .mission-img img{
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media(max-width: 860px){
+    .vision-img img{
+        width: 300px;
+        height: 250px;
+    }
+
+    .mission-img img{
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 740px){
+    .storyinfo .container{
+        width: 100%;
+        display: block;
+    }
+
+    .about-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-img img{
+        width: 70%;
+    }
+
+    .storyinfo .container .content{
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .storyinfo .container .content h1, p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .storyinfo .container .content p{
+        margin-right: 10%;   
+    }
+
+    .form-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vision-container{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .vision-content{
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        order: 2;
+    }
+
+    .vision-content h1{
+        padding-left: 10px;
+        margin-left: 10px;
+        order: 2;
+    }
+
+    .vision-content p{
+        text-align: justify;
+        order: 1;
+    }
+
+    .vision-img{
+        margin: 15px 0;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+
+    .vision-img img{
+        width: 100%;
+        margin-top: 10px;
+        order: 1;
+    }
+
+    .mission-container{
+        width: 80%;
+        display: block;
+    }
+
+    .mission-content{
+        width: 100%;
+        padding: 0;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        /* order: 1; */
+    }
+
+    .mission-content .text-container{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .text-container div p{
+        display: block;
+        text-align: left;
+    }
+
+    .text-container div:last-child{
+        margin-top: 5px;
+    }
+
+    .mission-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission-img img{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+}
+
+/* for mobile screen  */
+@media(max-width:540px){
+    .about-img img{
+        width: 100%;
+    }
+
+    .mission-img img{
+        width: 100%;
+    }
+}

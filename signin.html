@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>RiseWell Sign in</title>
+    <link href="src/logo/risewell-favicon-color.png" rel="icon" type="image/png" />
+    <!-- for navbar and footer  -->
+    <link href="./css/home.css" rel="stylesheet" type="text/css" />
+    <!-- for Signin page style  -->
+    <link href="./css/signin.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- start nav  -->
+    <header>
+        <nav>
+            <a href="./index.html" id="navlogo" class="navlogo">
+                <img src="src/logo/risewell-favicon-color.png" width="50px" alt="RiseWellLogo" />
+                <span>RiseWell</span>
+            </a>
+    
+            <label for="menu-bar">Menu</label>
+            <input type="checkbox" id="menu-bar"/>
+
+            <div id="navbar" class="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li id="drop-about" class="dropdown"><a href="./aboutus.html">About Us</a>
+                        <ul id="dropcontent-about" class="dropcontent">
+                            <li><a href="./aboutus.html#ourstory">Our Story</a></li>
+                            <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
+                            <li><a href="./contactus.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+    
+                    <li id="drop-news" class="dropdown"><a href="./news.html">News</a>
+                        <ul id="dropcontent-news" class="dropcontent">
+                            <li><a href="./news.html">Health Benefits</a></li>
+                            <li><a href="./csr.html">CSR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="myacc">
+                <div class="search-container">
+                    <input type="search" id="search-box" class="search-box" placeholder="Search" />
+                    <span><i class="fas fa-search"></i></span>
+                </div>
+
+                <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="./signin.html"><i class="far fa-user-circle"></i> </a>
+            </div>
+    
+        </nav>
+    </header>
+    <!-- end nav  -->
+
+    <!-- start log in  -->
+    <section class="login">
+        <div class="login-container">
+            <h2>Sign in</h2>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="pw">Password</label>
+                    <input type="password" name="pw" id="pw" class="form-control" placeholder="Enter your password" />
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox" name="remember" id="remember" class="form-control" />
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn">Sign in</button>
+
+                <div class="register">
+                    <p>Don't have an account?</p>
+                    <a href="./signup.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end log in  -->
+
+
+    <!-- start footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="quick-link-container">
+                <div class="quick-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="./contactus.html">Contact Us</a></li>
+                            <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
+                            <li><a href="./csr.html">CSR</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="./cart.html">Shipping</a></li>
+                            <li><a href="./index.html#certificate">Warranty</a></li>
+                            <li><a href="./signin.html">My Account</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="./products.html">New Arrivals</a></li>
+                            <li><a href="./products.html">Best Sellers</a></li>
+                            <li><a href="./products.html#all-products">All Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="follow-us">
+                    <h3>Follow Us</h3>
+                    <div class="follow-link">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="footer-column help-column">
+                <h4>Need Help? We're here for you.</h4>
+                <div class="help-links">
+                    <a href="#" class="help-link">Live Chat Online</a>
+                    <a href="tel:+123456" class="help-link">Call: +123456</a>
+                    <a href="./contactus.html#contact-form" class="help-link">Contact Form</a>
+                    <a href="mailto:info@risewell.com" class="help-link">Email: info@risewell.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-terms">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy & Cookie Policy</a>
+            </div>
+
+            <div class="footer-copy">
+                ©2024, RiseWell Company Ltd., All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+</body>
+
+</html>

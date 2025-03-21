@@ -1,0 +1,206 @@
+:root{
+    --bld: rgb(7, 24, 196);
+    --bll: rgb(42, 153, 222);
+    --gr: rgb(46, 204, 64);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/* start topic */
+section .top-container{
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px 0;
+    text-align: center;
+}
+/* end topic */
+
+/* contact style  */
+.contact{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .content-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container i{
+    font-size: 20px;
+}
+
+.content-container i a{
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 10px;
+    line-height: 2;
+}
+
+.contact-container .img-container{
+    width: 50%;
+}
+
+.contact-container .img-container img{
+    width: 100%;
+}
+
+/* map style  */
+.map{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rw-map{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rw-map h1{
+    margin: 40px 0;
+}
+
+.rw-map iframe{
+    width: 600px;
+    height: 450px;
+}
+
+/* contact form style */
+.contact-form{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h3{
+    margin: 40px 0 20px 0;
+}
+
+.contact-form .form-container{
+    width: 80%;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group{
+    width: 50%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.form-group input{
+    width: 90%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.form-group.comment{
+    width: 100%;
+}
+
+.form-group textarea{
+    width: 95%;
+    resize: none;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.form button{
+    font-size: 16px;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: all .2s;
+}
+
+.form button:hover{
+    background-color: var(--gr);
+    box-shadow: 1px 1px 5px gray;
+}
+
+
+/* for tablet screen  */
+
+@media(max-width: 740px){
+    .contact-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container .img-container{
+        width: 100%;
+        order: 1;
+    }
+
+    .contact-container .content-container{
+        width: 100%;
+        margin-top: 15px;
+        order: 2;
+    }
+
+    .content-container i a{
+        padding-left: 20px;
+    }
+
+    .rw-map iframe{
+        width: 100%;
+    }
+}
+
+/* for mobile screen  */
+@media(max-width:540px){
+    .contact-form h3{
+        font-size: 16px;
+    }
+
+    .form button{
+        font-size: 14px;
+        width: 80px;
+    }
+}
