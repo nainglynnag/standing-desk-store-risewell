@@ -85,8 +85,18 @@ nav{
     width: 100%;
 }
 
+.navbar ul li a{
+    transition: all .3s ease-in;
+}
+
 .navbar ul li ul li a:hover{
     color: var(--bll);
+}
+
+.navbar ul li a.active {
+    color: var(--bll);  /* Change to your preferred color */
+    font-weight: bold;
+    border-bottom: 2px solid var(--bll);
 }
 
 .navbar ul .dropdown:focus-within > .dropcontent,
@@ -121,6 +131,14 @@ nav{
     font-size: 14px;
 }
 
+.myacc .shop-cart{
+    font-size: 1.2rem;
+}
+
+.myacc .user-icon{
+    font-size: 1.5rem;
+}
+
 nav > div:last-child{
    display: flex; 
    align-items: center;
@@ -150,6 +168,54 @@ header nav label{
     cursor: pointer;
     display: none;
 }
+
+/* Humburger Menu  */
+.hamburger{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    width: 24px;
+    height: 2px;
+    background-color: #f4f4f4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0);
+    transition: all .5s;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
+
 /* end navbar  */
 
 /* start main banner  */
@@ -241,7 +307,7 @@ header nav label{
 /* start featured products */
 .featured-products{
     width: 100%;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .featured-products-heading{
@@ -270,7 +336,6 @@ header nav label{
 .cardcontainer{
     width: 100%;
     margin-top: 20px;
-    /* background-color: cyan; */
     display: flex;
     justify-content: space-around;
 }
@@ -432,11 +497,11 @@ header nav label{
 /* start partners */
 .partners{
     text-align: center;
-    margin: 30px;
+    margin: 50px 30px;
 }
 
 .partners-container{
-    margin: 10px;
+    margin: 20px 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -452,10 +517,13 @@ header nav label{
 /* start signup */
 .signup-news{
     background-color: #b9b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-container{
-    padding: 20px;
+    padding: 40px 20px;
     margin: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -467,15 +535,15 @@ header nav label{
     width: 60%;
     text-align: left;
     padding: 0 10px;
-    margin-left: 0;
+    margin-right: 5rem;
     flex-grow: 1;
     /* margin: 0 10px; */
 }
 
 .signup-container .signup-newsletter p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 350;
-    padding: 4px 0;
+    padding: 6px 0;
 }
 
 .signup-container .signup-box .email, .signup{
@@ -540,7 +608,7 @@ header nav label{
 }
 
 .footer-column h4{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .footer-column ul{
@@ -549,7 +617,7 @@ header nav label{
 }
 
 .footer-column ul li{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .footer-column ul li a{
@@ -681,6 +749,7 @@ header nav label{
         right: 0;
         background-color: #000;
         border-top: 1px solid rgba(0,0,0,0.2);
+        padding: 0 1rem;
         display: none;   
     }
 
@@ -694,6 +763,7 @@ header nav label{
         right: 0;
         background-color: #000;
         border-top: 1px solid rgba(0,0,0,0.2);
+        padding: 0 1rem;
         display: none;
     }
 
@@ -742,7 +812,7 @@ header nav label{
 
     .certificate.container{
         width: 100%;
-        padding: 0;
+        padding: 20px 0;
         justify-content: space-around;
     }
 
@@ -768,21 +838,74 @@ header nav label{
         width: 100%;
         margin: 0;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .signup-container div{
         width: 100%;
     }
 
-    .signup-newsletter{
-        width: 100%;
+    .signup-container .signup-newsletter{
+        width: 80%;
         padding: 0;
-        margin: 0;
+        margin: 0 0 8px 0;
     }
 
-    .signup-box{
+    .signup-container .signup-box{
+        width: 80%;
+        padding: 0 10px;
+    }
+    
+    .footer-container{
         width: 100%;
-        margin: 5px 0 0 0;
+        margin: 0 10px;
+        flex-direction: column;
+    }
+
+    .quick-link-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .quick-links{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .follow-us{
+        width: 100%;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .footer-container .footer-column{
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-column.help-column{
+        width: 80%;
+        min-width: 220px;
+        padding: 20px;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    .help-link{
+        padding: 10px;
+    }
+
+    .footer-bottom{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .footer-bottom div{
+        width: 100%;
+        padding: 5px 0;
+        margin-top: 5px;
+        align-items: start;
     }
 
 }
@@ -824,53 +947,4 @@ header nav label{
         margin-left: 0;
     }
 
-    .footer-container{
-        width: 100%;
-        margin: 0 10px;
-        flex-direction: column;
-    }
-
-    .quick-link-container{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .quick-links{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .follow-us{
-        width: 100%;
-        padding: 0;
-        margin: 20px 0;
-    }
-
-    .footer-container .footer-column{
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .footer-column.help-column{
-        width: 60%;
-        padding: 20px;
-        margin: 10px 0;
-        align-items: center;
-    }
-
-    .help-link{
-        padding: 10px;
-    }
-
-    .footer-bottom{
-        padding: 0;
-        flex-direction: column;
-    }
-
-    .footer-bottom div{
-        width: 100%;
-        padding: 5px 0;
-        margin-top: 5px;
-        align-items: start;
-    }
 }

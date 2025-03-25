@@ -32,7 +32,11 @@
                 <span>RiseWell</span>
             </a>
     
-            <label for="menu-bar">Menu</label>
+            <label for="menu-bar" id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </label>
             <input type="checkbox" id="menu-bar"/>
 
             <div id="navbar" class="navbar">
@@ -62,8 +66,8 @@
                     <span><i class="fas fa-search"></i></span>
                 </div>
 
-                <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="./signin.html"><i class="far fa-user-circle"></i> </a>
+                <a href="./cart.html"><i class="fas fa-shopping-cart shop-cart"></i></a>
+                <a href="./signin.html"><i class="far fa-user-circle user-icon"></i> </a>
             </div>
     
         </nav>
@@ -77,26 +81,54 @@
 
             <form action="#" method="post">
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" />
+                    <div class="field email">
+                    
+                        <div class="input-field">
+                            <label for="remail">Email</label>
+                            <input type="text" name="remail" id="remail" class="form-control" placeholder="Enter your email address" required autofocus>
+                        </div>
+    
+                        <!-- error -->
+                        <div class="error rmail-err">
+                        </div>
+    
+                    </div>
+    
+                    <div class="field password">
+                        
+                        <div class="input-field">
+                            <label for="rpassword">Password</label>
+                            <input type="text" name="rpassword" id="rpassword" class="form-control" placeholder="Create your password" required>
+                        </div>
+    
+                        <!-- error -->
+                        <div class="error rpass-err">
+                        </div>
+    
+                    </div>
+    
+                    <div class="field confirm-password">
+                        
+                        <div class="input-field">
+                            <label for="cpassword">Confirm Password</label>
+                            <input type="text" name="cpassword" id="cpassword" class="form-control" placeholder="Confirm your password">
+                        </div>
+    
+                        <!-- error -->
+                        <div class="error cpass-err">
+                        </div>
+    
+                    </div>
+
                 </div>
 
-                <div class="form-group">
-                    <label for="pw">Password</label>
-                    <input type="password" name="pw" id="pw" class="form-control" placeholder="Enter your password" />
+                <div class="terms-agree">
+                    <label for="terms-agree">
+                        <input type="checkbox" id="terms-agree" class="termChecked form-control">I have read and agree to the terms and conditions.
+                    </label>
                 </div>
 
-                <div class="form-group">
-                    <label for="confirm-pw">Confirm Password</label>
-                    <input type="password" name="confirm-pw" id="confirm-pw" class="form-control" placeholder="Enter your password" />
-                </div>
-
-                <div class="terms">
-                    <input type="checkbox" name="remember" id="remember" class="form-control" />
-                    <label for="remember">I have read and agree to the terms and conditions.</label>
-                </div>
-
-                <button type="submit" class="btn">Sign up</button>
+                <button type="submit" id="signUpBtn" class="btn">Sign up</button>
 
                 <div class="signin">
                     <p>If you have an account?</p>
@@ -173,12 +205,14 @@
             </div>
 
             <div class="footer-copy">
-                ©2024, RiseWell Company Ltd., All Rights Reserved.
+                © <span id="autoyear">2024</span>, RiseWell Company Ltd., All Rights Reserved.
             </div>
         </div>
     </footer>
     <!-- end footer section -->
 
+    <script src="scripts/global.js"></script>
+    <script src="scripts/signup.js"></script>
 </body>
 
 </html>

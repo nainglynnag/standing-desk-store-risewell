@@ -1,0 +1,85 @@
+:root {
+    --bld: rgb(7, 24, 196);
+    --bll: rgb(42, 153, 222);
+    --gr: rgb(46, 204, 64);
+    --light-gray: #f4f4f4;
+    --dark-gray: #333;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+}
+
+#checkout {
+    margin: 6rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-container {
+    max-width: 800px;
+    background: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: var(--bld);
+}
+
+.checkout-section {
+    margin: 1rem 0 1.5rem 0;
+}
+
+#checkout-form input, #payment-form input {
+    width: 100%;
+    height: 3rem;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout-summary {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.checkout-summary h3 {
+    margin-bottom: 1rem;
+}
+
+#order-summary{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+#total-price{
+    margin-left: 5px;
+}
+
+button {
+    width: 100%;
+    background: var(--bld);
+    color: white;
+    font-size: 1.2em;
+    margin: 1.2rem 0 1rem 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--bll);
+}

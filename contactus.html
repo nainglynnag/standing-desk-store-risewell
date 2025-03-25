@@ -31,7 +31,11 @@
                 <span>RiseWell</span>
             </a>
     
-            <label for="menu-bar">Menu</label>
+            <label for="menu-bar" id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </label>
             <input type="checkbox" id="menu-bar"/>
 
             <div id="navbar" class="navbar">
@@ -61,8 +65,8 @@
                     <span><i class="fas fa-search"></i></span>
                 </div>
 
-                <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="./signin.html"><i class="far fa-user-circle"></i> </a>
+                <a href="./cart.html"><i class="fas fa-shopping-cart shop-cart"></i></a>
+                <a href="./signin.html"><i class="far fa-user-circle user-icon"></i> </a>
             </div>
     
         </nav>
@@ -226,12 +230,13 @@
             </div>
 
             <div class="footer-copy">
-                ©2024, RiseWell Company Ltd., All Rights Reserved.
+                © <span id="autoyear">2024</span>, RiseWell Company Ltd., All Rights Reserved.
             </div>
         </div>
     </footer>
     <!-- end footer section -->
 
+    <script src="scripts/global.js"></script>
 </body>
 
 </html>

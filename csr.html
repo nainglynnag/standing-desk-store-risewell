@@ -32,7 +32,11 @@
                 <span>RiseWell</span>
             </a>
     
-            <label for="menu-bar">Menu</label>
+            <label for="menu-bar" id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </label>
             <input type="checkbox" id="menu-bar"/>
 
             <div id="navbar" class="navbar">
@@ -62,105 +66,34 @@
                     <span><i class="fas fa-search"></i></span>
                 </div>
 
-                <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="./signin.html"><i class="far fa-user-circle"></i> </a>
+                <a href="./cart.html"><i class="fas fa-shopping-cart shop-cart"></i></a>
+                <a href="./signin.html"><i class="far fa-user-circle user-icon"></i> </a>
             </div>
     
         </nav>
     </header>
     <!-- end nav  -->
 
-    <!-- start news -->
+    <!-- start csr -->
     <section class="sec-container">
         <h1>Our CSR Activities</h1>
         <div class="main-container">
-            
-            <div class="new-gp">
-                <div class="new-card">
-                    <h3 id="team">Team Building and Save The World Event</h3>
-                    <div class="media-container">
-                        <img src="src/images/csr1.jpg" alt="team-building"/>
-                    </div>
-                    <p>
-                        On May 25, 2024, our team participated in an extraordinary CSR activity that drew us all closer together. We spent the day helping at a local animal shelter, cleaning kennels, walking dogs, and playing with the animals. This team-building exercise not only enhanced our ties but also had a beneficial effect on the neighborhood. Everyone departed feeling more connected and fulfilled, knowing they had contributed to a worthwhile cause. The experience reminded us of the importance of collaboration and giving back, making it an unforgettable day for everyone involved.
-                    </p>
-                    <div class="sub-media-con">
-                        <video src="./../video/vdo3.mp4" controls></video>
-                    </div>
-                    <p>
-                        Participants are advised to bring reusable gloves, bags, and water bottles to reduce waste during the cleaning. As we walk around the specified area, we'll not only pick up trash but also segregate recyclables from non-recyclables to guarantee correct disposal. Information on the impact of pollution on regional animals and ecosystems will be provided via educational stations erected along the route. This practical method not only helps to clean the environment but also raises awareness of the need of sustainable lifestyles in daily life.
-                    </p>
-                    <div class="sub-media-con">
-                        <figure>
-                            <img src="src/images/csr2.jpg" alt="team-building" />
-                            <figcaption>Bowling</figcaption>
-                        </figure>
-                    </div>
-                    <br/>
-                    <p>
-                        In conclusion, the CSR activities we participated in on May 25, 2024, were both powerful and educational. Our time at the local animal shelter not only created team togetherness and personal satisfaction but also made a genuine impact in our neighborhood. Similarly, the forthcoming cleaning event underlines our commitment to environmental stewardship by promoting sustainable activities and educating participants on the necessity of effective trash management. Together, these activities show our goal to having a good effect via collaboration and socially responsible acts, eventually building a stronger, more conscious community.
-                    </p>
-                    <hr/>
-                </div>
-                
-                <div class="new-card">
-                    <h3 id="yoga">Yoga Activities</h3>
-                    <div class="media-container">
-                        <figure>
-                            <img src="src/images/csr3.jpg" alt="yoga-activity"/>
-                            <figcaption>Yoga Activity</figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        Our standing desk business practiced yoga on April 22, 2024. Our employees and participants saw the clear health advantages from yoga, such as increased flexibility, less worry, and better mental concentration. This event was part of our commitment to promoting healthy, balanced working lifestyles. By adding yoga into our health program, we wanted to improve our team's physical and mental well-being, finally improving efficiency and work happiness. The workshop was a smash, leaving everyone feeling refreshed and more linked, showing the importance of holistic health practices in a lively work setting.
-                    </p>
-                    <hr/>
-                </div>
-
-                <div class="new-card">
-                    <h3 id="sport">Sport: Football Activities</h3>
-                    <div class="media-container">
-                        <figure>
-                            <img src="src/images/csr4.jpg" alt="women-football-cup"/>
-                            <figcaption>Women Football Champion</figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        The Autumn football activity took place between February 1 and February 14, 2024, with both men and women participating. This thrilling event drew football lovers for two weeks of fun and competition. Participants enjoyed daily matches, skill-building lectures, and community-building events. Everyone, from novices to experienced gamers, had the opportunity to develop their skills while making new friends. The event not only encouraged physical health, but also a sense of community and collaboration. It was an excellent opportunity to keep active and interact with other football fans. Attendees departed with lasting memories and a renewed passion for the sport.
-                    </p>
-                    <div class="sub-media-con">
-                        <figure>
-                            <img src="src/images/csr5.jpg" alt="men-football-cup" />
-                            <figcaption>Men Football Cup</figcaption>
-                        </figure>
-                    </div>
-                    <br/>
-                    <hr/>
-                </div>
-
-                <div class="pg-container">
-                    <div class="pages">
-                        <a href="#"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#"><i class="fas fa-circle"></i></a>
-                        <a href="#"><i class="fas fa-circle"></i></a>
-                        <a href="#"><i class="fas fa-circle"></i></a>
-                        <a href="#"><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
+            <div class="new-gp" id="news-container">
+                <!-- CSR articles will be dynamically added here -->
             </div>
-
+    
             <aside class="mini-gp">
                 <div class="follow">
                     <h3>Follow Us</h3>
-                    <div class="follow-link">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <div class="follow-link-aside">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                     <hr/>
                 </div>
-
+    
                 <div class="popular-tag">
                     <h3>Popular Tags</h3>
                     <div class="popular-links">
@@ -183,10 +116,18 @@
                         <button type="button" id="contact-btn" class="contact-btn" onclick="window.location.href='./contactus.html';">Contact Now</button>
                     </div>
                 </div>
+                
             </aside>
         </div>
+    
+        <div class="pg-container">
+            <div class="pages" id="pagination">
+                <!-- Pagination will be dynamically generated here -->
+            </div>
+        </div>
     </section>
-    <!-- end news  -->
+
+    <!-- end csr  -->
 
 
     <!-- start footer section -->
@@ -254,12 +195,14 @@
             </div>
 
             <div class="footer-copy">
-                ©2024, RiseWell Company Ltd., All Rights Reserved.
+                © <span id="autoyear">2024</span>, RiseWell Company Ltd., All Rights Reserved.
             </div>
         </div>
     </footer>
     <!-- end footer section -->
 
+    <script src="scripts/global.js"></script>
+    <script src="scripts/csr.js"></script>
 </body>
 
 </html>

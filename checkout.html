@@ -5,12 +5,12 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>RiseWell Sign in</title>
+    <title>RiseWell Cart</title>
     <link href="src/logo/risewell-favicon-color.png" rel="icon" type="image/png" />
     <!-- for navbar and footer  -->
     <link href="./css/home.css" rel="stylesheet" type="text/css" />
-    <!-- for Signin page style  -->
-    <link href="./css/signin.css" rel="stylesheet" type="text/css" />
+    <!-- for cart page style  -->
+    <link href="./css/checkout.css" rel="stylesheet" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,60 +74,44 @@
     </header>
     <!-- end nav  -->
 
-    <!-- start log in  -->
-    <section class="login">
-        <div class="login-container">
-            <h2>Sign in to your account</h2>
-
-            <form action="#" method="post">
-                <div class="form-group">
-
-                    <div class="field email">
-                    
-                        <div class="input-field">
-                            <label for="lemail">Email</label>
-                            <input type="text" name="lemail" id="lemail" class="form-control" placeholder="Enter your email address" required autofocus>
-                        </div>
+    <!-- start checkout  -->
+    <section id="checkout">
+        <div class="checkout-container">
+            <h2>Checkout</h2>
     
-                        <!-- error -->
-                        <div class="error mail-err">
-                        </div>
+            <!-- Billing Details -->
+            <div class="checkout-section">
+                <h3>Billing Details</h3>
+                <form id="checkout-form">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="zip" placeholder="ZIP Code" required>
+                </form>
+            </div>
     
-                    </div>
-
-                    <div class="field password">
-                    
-                        <div class="input-field">
-                            <label for="lpassword">Password</label>
-                            <input type="text" name="lpassword" id="lpassword" class="form-control" placeholder="Enter your password" required>
-                        </div>
+            <!-- Payment Details -->
+            <div class="checkout-section">
+                <h3>Payment Details</h3>
+                <form id="payment-form">
+                    <input type="text" id="card-number" placeholder="Card Number" maxlength="16" required>
+                    <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                    <input type="text" id="cvv" placeholder="CVV" maxlength="3" required>
+                </form>
+            </div>
     
-                        <!-- error -->
-                        <div class="error pass-err">
-                        </div>
+            <!-- Order Summary -->
+            <div class="checkout-summary">
+                <h3>Order Summary</h3>
+                <div id="order-summary"></div>
+                <p><strong>Total: £<span id="total-price">0.00</span></strong></p>
+            </div>
     
-                    </div>
-    
-                    <div class="remember-forgot">
-                        <label for="remember">
-                            <input type="checkbox" id="remember">Remember Me
-                        </label>
-    
-                        <a href="#">Forgot Password?</a>
-                    </div>
-    
-                    <button type="submit" id="signInBtn" class="btn">Sign in</button>
-
-                </div>
-
-                <div class="register">
-                    <p>Don't have an account?</p>
-                    <a href="./signup.html">Sign up</a>
-                </div>
-            </form>
+            <button id="place-order">Place Order</button>
         </div>
     </section>
-    <!-- end log in  -->
+    <!-- end checkout  -->
 
 
     <!-- start footer section -->
@@ -202,7 +186,7 @@
     <!-- end footer section -->
 
     <script src="scripts/global.js"></script>
-    <script src="scripts/signin.js"></script>
+    <script src="scripts/checkout.js"></script>
 </body>
 
 </html>

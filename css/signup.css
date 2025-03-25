@@ -40,29 +40,64 @@ body{
     text-align: center;
 }
 
-.form-group{
+.form-group .field{
     margin-bottom: 30px;
 }
 
-.form-group label{
+.form-group .input-field label{
     margin-bottom: 8px;
     display: block;
 }
 
-.form-group .form-control{
+.input-field .form-control{
     width: 100%;   
     padding: 10px;
     border: none;
     border-radius: 8px;
 }
 
-.form-group .form-control::placeholder{
+.input-field .form-control::placeholder{
     color: rgba(0,0,0,0.5);
 }
 
-.terms input, label{
+.field .error{
+    color: tomato;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.form-control.shake{
+    /* border: 1px solid tomato; */
+    animation: shake .3s ease-in-out;
+}
+
+@keyframes shake {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: -12px;
+    }
+    100%{
+        margin-left: 12px;
+    }
+}
+
+.form-control.invalid{
+    outline: 1px solid tomato;
+}
+
+.terms-agree input, label{
     margin-right: 5px;
     cursor: pointer;
+}
+
+.termChecked.uncheck{
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    border: 2px solid tomato;
 }
 
 form .btn{
